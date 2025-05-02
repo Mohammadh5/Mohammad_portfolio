@@ -31,7 +31,7 @@
 
     <!--Sidebar-->
   <nav>
-    <ul class="sidebar">
+    <ul class="sidebar" id="sidebar">
       <li onclick=hideSidebar()><a href="#"><img class="close-menu" src="assets/close.svg"></a></li>
       <li class="home-side"><a href="#home-section">Home</a></li>
       <li><a href="#about-section">About Me</a></li>
@@ -67,22 +67,7 @@
       </div>
     </div>
 
-    <script>
-      function showsidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
-      }
-      function hideSidebar(){
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
-      }
-       // Hide sidebar when any link inside it is clicked
-  document.querySelectorAll('#sidebar a').forEach(link => {
-    link.addEventListener('click', () => {
-      hideSidebar();
-    });
-  });
-    </script>
+   
 
     <div class="stars"></div>
     <div class="shooting-star"></div>
@@ -287,6 +272,29 @@
     <footer>
       <p>Mohammad Hammad</p>
     </footer>
+
+
+    <script>
+      function showsidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+  }
+
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+  }
+
+  // Run only after the page is fully loaded
+  window.onload = function () {
+    // Hide sidebar when any link inside it is clicked
+    document.querySelectorAll('#sidebar a').forEach(link => {
+      link.addEventListener('click', () => {
+        hideSidebar();
+      });
+    });
+  };
+    </script>
 
   </body>
 </html>
