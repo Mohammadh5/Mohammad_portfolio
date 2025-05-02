@@ -1,0 +1,71 @@
+.btn-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+.header {
+  position: fixed;
+  z-index: 2;
+}
+
+/* Reset link styles */
+.btn-container a {
+  color: white; /* Stay white */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Font size */
+  font-family: Tagesschrift, Arial; /* Font family */
+}
+
+/*adding margins between the links*/
+.btn-container .home-btn a,
+.btn-container .about-btn a,
+.btn-container .project-btn a,
+.btn-container .contact-btn a,
+.btn-container .skills-btn a {
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: background-color 1s, border-radius 0.5s, color 0.5s ease-in-out;
+}
+
+/*adding hover effect to the about section link*/
+.btn-container .about-btn:hover a,
+.btn-container .project-btn:hover a,
+.btn-container .contact-btn:hover a,
+.btn-container .skills-btn:hover a {
+  background-color: rgba(144, 238, 144, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+/*change the color of the home btn to black*/
+.btn-container .home-btn a {
+  color: black;
+}
+
+/*changing the background color of the home section link*/
+.home-btn a {
+  background-color: rgba(144, 238, 144, 0.8);
+  border-radius: 5px;
+}
+
+/*adding hover effect to the home section link*/
+.btn-container .home-btn:hover a {
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgba(144, 238, 144, 0.8);
+}

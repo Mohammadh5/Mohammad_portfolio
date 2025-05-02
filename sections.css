@@ -1,0 +1,553 @@
+
+
+/* HOME SECTION */
+
+.home-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.name-text{
+  font-size: 50px;
+  font-family: Tagesschrift, Arial;
+  color: white;
+  margin-bottom: 0;
+ 
+}
+.intro{
+  text-align: center;
+  transition: text-shadow 0.5s ease-in-out;
+  background-color: black;
+}
+
+.intro:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+.intro-text{
+  font-size: 23px;
+  font-family: Tagesschrift, Arial;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  
+}
+/*hover effect on the intro text*/
+.intro-text:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.resume-btn{
+  font-size: 13px;
+  font-family: Tagesschrift, Arial;
+  color: black;
+  background-color: rgba(144,238,144,0.8);
+  border-radius: 5px;
+  padding: 8px 10px 8px 10px;
+  border: none;
+  transition: background-color 1s, border-radius 0.5s, color 0.5s, box-shadow 0.5s ease-in-out;
+  margin-right: 10px;
+}
+
+/*hover effect on the resume button*/
+
+.resume-btn:hover{
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color:rgba(144,238,144,0.8);
+  box-shadow: rgba(143,238,144,1) 0px 0px 46px;;
+}
+
+.contact-me{
+  font-size: 13px;
+  font-family: Tagesschrift, Arial;
+  color: black;
+  background-color: rgba(144,238,144,0.8);
+  border-radius: 5px;
+  padding: 8px 10px 8px 10px;
+  border: none;
+  transition: background-color 1s, border-radius 0.5s, color 0.5s, box-shadow 0.5s ease-in-out;
+}
+
+/*hover effect on the contact me button*/
+.contact-me:hover{
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color:rgba(144,238,144,0.8);
+  box-shadow: rgba(143,238,144,1) 1px 1px 46px;;
+}
+
+.github-img,
+.linkedin-img{
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+  transition: transform 0.5s ease-in-out;
+  vertical-align: top;
+  
+}
+
+.github-img:hover,
+.linkedin-img:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/*ABOUT SECTION*/
+
+.about-grid{
+  transition: text-shadow 1s ease-in-out;
+}
+
+.about-grid:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+.about-header{
+  font-size: 50px;
+  font-family: Tagesschrift, Arial;
+  display: grid ;
+  grid-template-columns: 300px;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.about-header:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+.about-contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.moh-img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-img{
+ width: 50px;
+}
+
+.education-card{
+  color: white;
+  font-family: Tagesschrift, Arial;
+  border-width:2px ;
+  border-style: solid;
+  border-color: rgb(29, 29, 29);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  transition: -webkit-box-shadow 1s ease-in-out, -moz-box-shadow 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.education-card:hover{
+  -webkit-box-shadow:0px 0px 87px 37px rgba(144,238,144,0.58);
+-moz-box-shadow: 0px 0px 87px 37px rgba(144,238,144,0.58);
+box-shadow: 0px 0px 87px 37px rgba(144,238,144,0.58);
+}
+
+.me-card{
+  color: white;
+  font-family: Tagesschrift, Arial;
+  border-width:2px ;
+  border-style: solid;
+  border-color: rgb(29, 29, 29);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin-bottom: 50px;
+  transition: -webkit-box-shadow 1s ease-in-out, -moz-box-shadow 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.me-card:hover{
+  -webkit-box-shadow:0px 0px 87px 37px rgba(144,238,144,0.58);
+-moz-box-shadow: 0px 0px 87px 37px rgba(144,238,144,0.58);
+box-shadow: 0px 0px 87px 37px rgba(144,238,144,0.58);
+}
+
+
+
+
+/*SKILLS SECTION*/
+.skills-grid{
+  background-color: black;
+  margin-bottom: 0;
+  color: white;
+  font-family: Tagesschrift, Arial;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.skills-grid:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+
+.header-text{
+  font-size: 50px;
+  font-family: Tagesschrift, Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.header-text:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+.skills-text{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  text-align: center;
+  margin:0;
+}
+
+.css-image, .html-image,
+.javascript-image, .java-image,
+.c-sharp-image{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.sql-image{
+  width:150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: 220px 220px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 50px;
+  text-align: center;
+ 
+}
+
+.skills:hover{
+cursor: pointer;
+}
+
+.skill-card-1, 
+.skill-card-2,
+.skill-card-3,
+.skill-card-4,
+.skill-card-5,
+.skill-card-6{
+  width: 220px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card-1:hover .tooltip,
+.skill-card-2:hover .tooltip,
+.skill-card-3:hover .tooltip,
+.skill-card-4:hover .tooltip,
+.skill-card-5:hover .tooltip,
+.skill-card-6:hover .tooltip{
+  right: 0;
+
+}
+
+.tooltip{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background:rgba(144, 238, 144, 0);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.7s ease-in-out;
+}
+
+
+
+
+/*PROJECTS SECTION*/
+
+
+/* container for all the project cards*/
+.project-cards{
+  /*used flexbox to make the project cards responsive and more flexible*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*make the header text of the projects section responsive*/
+.project-grid{
+  transition: text-shadow 1s ease-in-out;
+}
+
+.project-grid:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+
+}
+/*make the project header text at the center*/
+.project-header{
+  font-size: 50px;
+  font-family: Tagesschrift, Arial;
+  display: grid ;
+  grid-template-columns: 300px;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.project-header:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+
+/* fixing the project image*/
+.project-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+/*container for each project*/
+.card-1, .card-2, .card-3{
+  width: 100px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  transition: width 1s ease;
+  margin-top: 20px;
+
+}
+
+.card-1:hover .card-body,
+.card-2:hover .card-body,
+.card-3:hover .card-body{
+  right: 0;
+  
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  width: 300px;
+
+}
+
+/*text inside the card*/
+.card-body{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -150%;
+  background:rgba(144, 238, 144, 0);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.card-title{
+  font-size: 25px;
+  font-family: Tagesschrift, Arial;
+  color: white;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.card-languages{
+  font-size: 15px;
+  font-family: Tagesschrift, Arial;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.github-btn{
+  font-size:12px ;
+  font-family:Tagesschrift, Arial;
+  padding: 10px 20px 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 1s, border-radius 0.5s, color 0.5s ease-in-out;
+}
+
+/*hover effect on the github button*/
+
+.github-btn:hover{
+  background-color: rgba(144,238,144,0.8);
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  box-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+
+
+/*CONTACT SECTION*/
+
+.contact-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  gap: 20px;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.contact-grid a{
+  text-decoration: none;
+}
+
+.contact-grid:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+.contact-card{
+  color: white;
+  font-family: Tagesschrift, Arial;
+  border-width:2px ;
+  border-style: solid;
+  border-color: rgb(29, 29, 29);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  margin-top: 50px;
+  transition: -webkit-box-shadow 1s ease-in-out, -moz-box-shadow 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.contact-card:hover{
+  -webkit-box-shadow:0px 0px 87px 37px rgba(144,238,144,0.58);
+-moz-box-shadow: 0px 0px 87px 37px rgba(144,238,144,0.58);
+box-shadow: 0px 0px 87px 37px rgba(144,238,144,0.58);
+}
+
+.images{
+  text-align: center;
+}
+.email-section{
+  color: black;
+  background-color: rgba(144,238,144,0.8);
+  border-radius: 5px;
+  padding: 8px 10px 8px 10px;
+  border: none;
+  transition: background-color 1s, border-radius 0.5s, color 0.5s ease-in-out;
+  margin-bottom: 20px;
+}
+
+/*hover effect on the email button*/
+.email-section:hover{
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color:rgba(144,238,144,0.8);
+}
+
+.contact-header{
+  font-size: 50px;
+  font-family: Tagesschrift, Arial;
+  display: grid ;
+  grid-template-columns: 300px;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  transition: text-shadow 1s ease-in-out;
+}
+
+.contact-header:hover{
+  text-shadow: rgba(143,238,144,1) 0px 0px 46px;
+}
+
+/*footer section*/
+
+footer{
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Tagesschrift, Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
