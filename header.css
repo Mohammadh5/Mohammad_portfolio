@@ -1,6 +1,6 @@
 .btn-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   background-color: black;
@@ -10,41 +10,77 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 30px;
+  height: auto; /* Let content define height */
+  z-index: 2;
+  gap: 10px; /* helps on desktop too */
 }
 .header {
   position: fixed;
   z-index: 2;
 }
 
+/* MOBILE LAYOUT */
 @media only screen and (max-width: 760px) {
   .btn-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    gap: 10px; /* Adds clean spacing between items */
-    height: auto;
+    gap: 10px;
   }
 
-  .btn-container > div {
-    margin: 0; /* Reset margin between div wrappers */
-  }
-
-  .btn-container a {
-    padding: 6px 12px;
-    font-size: 18px;
-    display: inline-block;
+  .btn-container .home-btn a,
+  .btn-container .about-btn a,
+  .btn-container .project-btn a,
+  .btn-container .contact-btn a,
+  .btn-container .skills-btn a {
+    margin-right: 0; /* Remove desktop spacing */
+    width: 100%;
     text-align: center;
   }
 }
-
 /* Reset link styles */
 .btn-container a {
   color: white; /* Stay white */
   text-decoration: none; /* Remove underline */
   font-size: 20px; /* Font size */
   font-family: Tagesschrift, Arial; /* Font family */
+}
+
+
+/*desktop layout*/
+@media only screen and (max-width: 761px) {
+  .btn-container .home-btn a,
+  .btn-container .about-btn a,
+  .btn-container .project-btn a,
+  .btn-container .contact-btn a,
+  .btn-container .skills-btn a {
+    margin-right: 30px;
+  }
+}
+
+/* Hover effects */
+.btn-container .about-btn:hover a,
+.btn-container .project-btn:hover a,
+.btn-container .contact-btn:hover a,
+.btn-container .skills-btn:hover a {
+  background-color: rgba(144, 238, 144, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+.btn-container .home-btn a {
+  color: black;
+  background-color: rgba(144, 238, 144, 0.8);
+  border-radius: 5px;
+}
+
+.btn-container .home-btn:hover a {
+  background-color: black;
+  color: rgba(144, 238, 144, 0.8);
+  text-decoration: underline;
 }
 
 /*adding margins between the links*/
