@@ -50,9 +50,9 @@
   .btn-container .project-btn a,
   .btn-container .contact-btn a,
   .btn-container .skills-btn a {
-    margin-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     transition: background-color 1s, border-radius 0.5s, color 0.5s ease-in-out;
