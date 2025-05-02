@@ -21,13 +21,26 @@
   .btn-container {
   width: 100%;
   height: auto; /* Allow height to adjust based on content */
-  padding: 10px; /* Add padding for better spacing */
+  padding: 5px; /* Add padding for better spacing */
   }
   .header {
     width: auto;
     height: auto; /* Allow height to adjust based on content */
   
 }
+.btn-container a{
+  font-size: 13px; /* Adjust font size for smaller screens */
+  padding: 5px 10px; /* Adjust padding for smaller screens */
+}
+  .btn-container .home-btn a,
+  .btn-container .about-btn a,
+  .btn-container .project-btn a,
+  .btn-container .contact-btn a,
+  .btn-container .skills-btn a {
+    margin-right: 10px; /* Adjust margin for smaller screens */
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+  }
+  /* Add any other styles you want to adjust for smaller screens here */
 }
  
 
