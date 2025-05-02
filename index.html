@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="sections.css" />
+    <link rel="stylesheet" href="sidebar.css">
     <title>Mohammad Hammad</title>
   </head>
   <body>
@@ -27,6 +28,19 @@
     <div class="stars"></div>
     <div class="twinkling"></div>
     <div class="clouds"></div>
+
+    <!--Sidebar-->
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><img class="close-menu" src="assets/close.svg"></a></li>
+      <li class="home-side"><a href="#home-section">Home</a></li>
+      <li><a href="#about-section">About Me</a></li>
+      <li><a href="#skills-section">Skills</a></li>
+      <li><a href="#project-section">Projects</a></li>
+      <li><a href="#contact-section">Contact Me</a></li>
+     
+    </ul>
+  </nav>
 
     <!--Header-->
     <div class="header">
@@ -47,8 +61,22 @@
         <div class="contact-btn">
           <a href="#contact-section"> Contact Me </a>
         </div>
+        <div onclick=showsidebar() class="menu-item">
+          <img src="assets/menu.svg">
+        </div>
       </div>
     </div>
+
+    <script>
+      function showsidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
 
     <div class="stars"></div>
     <div class="shooting-star"></div>
