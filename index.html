@@ -76,6 +76,12 @@
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none'
       }
+       // Hide sidebar when any link inside it is clicked
+  document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', () => {
+      hideSidebar();
+    });
+  });
     </script>
 
     <div class="stars"></div>
