@@ -22,8 +22,13 @@
   height: auto; /* Allow height to adjust based on content */
   padding: 10px; /* Add padding for better spacing */
   }
+  .header {
+    width: auto;
+    height: auto; /* Allow height to adjust based on content */
   
 }
+}
+ 
 
 /* Reset link styles */
 .btn-container a {
