@@ -1,7 +1,8 @@
 .btn-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   background-color: black;
   color: white;
   padding: 10px;
@@ -9,12 +10,16 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 30px;
+  height: auto; /* Let content define height */
+  z-index: 2;
+  gap: 10px; /* helps on desktop too */
 }
 .header {
   position: fixed;
   z-index: 2;
 }
+
+
 
 /* Reset link styles */
 .btn-container a {
@@ -29,7 +34,8 @@
 .btn-container .about-btn a,
 .btn-container .project-btn a,
 .btn-container .contact-btn a,
-.btn-container .skills-btn a {
+.btn-container .skills-btn a,
+.menu-item {
   margin-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -42,7 +48,8 @@
 .btn-container .about-btn:hover a,
 .btn-container .project-btn:hover a,
 .btn-container .contact-btn:hover a,
-.btn-container .skills-btn:hover a {
+.btn-container .skills-btn:hover a,
+.menu-item:hover {
   background-color: rgba(144, 238, 144, 0.8);
   border-radius: 5px;
   cursor: pointer;
