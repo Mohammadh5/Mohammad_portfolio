@@ -363,7 +363,7 @@ cursor: pointer;
   transition: width 1s ease-in-out, height 1s ease-in-out;
 }
 /*container for each project*/
-.card-1, .card-2, .card-3{
+.card-1, .card-2, .card-3, .card-4{
   width: 100px;
   height: 300px;
   position: relative;
@@ -373,16 +373,19 @@ cursor: pointer;
 
 }
 
+
 .card-1:hover .card-body,
 .card-2:hover .card-body,
-.card-3:hover .card-body{
+.card-3:hover .card-body,
+.card-4:hover .card-body{
   right: 0;
   
 }
 
 .card-1:hover,
 .card-2:hover,
-.card-3:hover {
+.card-3:hover,
+.card-4:hover {
   width: 300px;
 
 }
@@ -423,9 +426,14 @@ cursor: pointer;
   margin-left: 20px;
 }
 
+.card-2 .card-title,
+.card-2 .card-languages {
+  color: black;
+}
+
 .github-btn{
   font-size:12px ;
-  font-family:Tagesschrift, Arial;
+  font-family: Arial, sans-serif;
   padding: 10px 20px 10px 20px;
   background-color: black;
   color: white;
